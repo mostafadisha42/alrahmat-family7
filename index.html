@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>alrahmat-family</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>رابطة شباب عائلة الرحومات</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    * {
+
+      margin: 0;
+
+      padding: 0;
+
+      box-sizing: border-box;
+
+      font-family: 'Cairo', sans-serif;
+
+    }
+
+    body {
+
+      background-color: #000;
+
+      color: #FFD700;
+
+      line-height: 1.6;
+
+      display: flex;
+
+      flex-direction: column;
+
+      min-height: 100vh;
+
+      overflow-x: hidden;
+
+    }
+
+    header {
+
+      background: #111;
+
+      padding: 20px;
+
+      text-align: center;
+
+    }
+
+    header img {
+
+      width: 80px;
+
+      margin-bottom: 10px;
+
+    }
+
+    header h1 {
+
+      font-size: 28px;
+
+    }
+
+    nav {
+
+      background: #222;
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      justify-content: center;
+
+      gap: 10px;
+
+      padding: 15px;
+
+    }
+
+    nav a {
+
+      color: #FFD700;
+
+      text-decoration: none;
+
+      padding: 10px 20px;
+
+      border: 1px solid #FFD700;
+
+      border-radius: 8px;
+
+      transition: background 0.3s;
+
+    }
+
+    nav a:hover {
+
+      background: #FFD700;
+
+      color: #000;
+
+    }
+
+    main {
+
+      flex: 1;
+
+      padding: 20px;
+
+    }
+
+    section {
+
+      margin-bottom: 30px;
+
+    }
+
+    footer {
+
+      background: #111;
+
+      text-align: center;
+
+      padding: 10px;
+
+      font-size: 14px;
+
+    }
+
+    @media (max-width: 600px) {
+
+      header h1 {
+
+        font-size: 24px;
+
+      }
+
+      nav a {
+
+        padding: 8px 15px;
+
+        font-size: 14px;
+
+      }
+
+    }
+
+    /* Animations */
+
+    @keyframes fadeInUp {
+
+      from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+      }
+
+      to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+      }
+
+    }
+
+    h2, p {
+
+      animation: fadeInUp 1s ease forwards;
+
+      animation-delay: 0.5s;
+
+      opacity: 0;
+
+    }
+
+    /* Splash Screen */
+
+    #splash {
+
+      position: fixed;
+
+      top: 0;
+
+      right: 0;
+
+      bottom: 0;
+
+      left: 0;
+
+      background: #000;
+
+      color: #FFD700;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      flex-direction: column;
+
+      z-index: 10000;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- Splash Screen -->
+
+<div id="splash">
+
+  <h1 style="font-size: 36px;">أهلاً بكم في رابطة شباب عائلة الرحومات</h1>
+
+  <p style="margin-top: 20px; font-size: 18px;">نعتز بتاريخنا، ونبني مستقبلنا</p>
+
+</div>
+
+<!-- Audio autoplay -->
+
+<audio id="background-audio" autoplay>
+
+  <source src="بني معروف الدروز وقطعع -  واحدنا بعشرة من الزلم(M4A_128K).m4a" type="audio/mpeg">
+
+  متصفحك لا يدعم تشغيل الصوت.
+
+</audio>
+
+<header>
+
+  <img src="logo.png" alt="شعار عائلة الرحومات">
+
+  <h1>رابطة شباب عائلة الرحومات</h1>
+
+</header>
+
+<nav>
+
+  <a href="#news">أخبار العائلة</a>
+
+  <a href="#contact">تواصل معنا</a>
+
+  <a href="#facebook">صفحتنا على فيسبوك</a>
+
+  <a href="#honor">المنصة الشرفية</a>
+
+  <a href="#tips">نصائح</a>
+
+</nav>
+
+<main>
+
+  <section>
+
+    <h2>مرحبًا بكم!</h2>
+
+    <p>أهلاً وسهلاً بكل أبناء عائلة الرحومات الكرام في موقعكم الرسمي. هنا نلتقي... نتواصل... ونتشرف بتاريخنا العظيم!</p>
+
+  </section>  
+
+  <section>
+
+    <h2>نبذة عن العائلة</h2>
+
+    <p>
+
+      عائلة الرحومات والتي تنتمي إلى نجع بكار (وكان يُسمى نجع رشوان سابقًا) في قرية السليمات التابعة لمركز أبوتشت بمحافظة قنا، جنوب مصر.
+
+      تمتاز هذه العائلة بالأصالة والكرم والوحدة، وتاريخها المشرف يمتد عبر الأجيال في المجتمع المصري الأصيل.
+
+    </p>
+
+  </section>  
+
+  <section id="news">
+
+    <h2>أخبار العائلة</h2>
+
+    <p>تابعوا آخر أخبار وتحديثات العائلة هنا.</p>
+
+  </section>  
+
+  <section id="honor">
+
+    <h2>المنصة الشرفية</h2>
+
+    <p>تكريم أعلام العائلة الذين شرفونا بإنجازاتهم.</p>
+
+  </section>  
+
+  <section id="tips">
+
+    <h2>نصائح وإرشادات</h2>
+
+    <p>مجموعة من النصائح المفيدة للشباب والأجيال القادمة.</p>
+
+  </section>  
+
+  <section id="contact">
+
+    <h2>تواصل معنا</h2>
+
+    <p>لأي استفسار أو تواصل معنا عبر البريد الإلكتروني أو صفحاتنا الرسمية.</p>
+
+  </section>  
+
+  <section id="facebook">
+
+    <h2>صفحتنا على فيسبوك</h2>
+
+    <p><a href="https://www.facebook.com/profile.php?id=100083711880122&mibextid=ZbWKwL" style="color: #FFD700; text-decoration: underline;">اضغط هنا للانتقال إلى صفحتنا الرسمية</a></p>
+
+  </section>
+
+</main>
+
+<footer>
+
+  &copy; 2025 جميع الحقوق محفوظة لعائلة الرحومات.
+
+</footer>
+
+<!-- Script to hide splash screen -->
+
+<script>
+
+  window.addEventListener('load', () => {
+
+    setTimeout(() => {
+
+      document.getElementById('splash').style.display = 'none';
+
+    }, 3000); // Splash يظهر لمدة ٣ ثواني
+
+  });
+
+</script>
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
